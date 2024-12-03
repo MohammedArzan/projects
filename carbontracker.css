@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Change to 'Proxima Nova' or any desired font */
+    background: #f4f4f4; /* Light gray background for simplicity */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px; /* Add padding for smaller devices */
+    text-align: center; /* Center align text */
+}
+
+/* Logo Styles */
+.logo-container {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%; /* Ensure it takes full width on smaller devices */
+    background: #ffffff; /* White background for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1b2df1; /* Blue for the heading */
+    font-weight: bold;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #555; /* Softer gray for labels */
+}
+
+/* Inputs and Selects */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Ensures consistent padding and width */
+}
+
+form input:focus, form select:focus {
+    border-color: #4caf50; /* Green focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2); /* Soft green glow */
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #220ce7; /* Slightly darker color on hover */
+}
+
+/* Results Section */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9; /* Light background for results */
+    border-left: 5px solid #f3f5f3; /* Green border to highlight */
+    font-size: 1.1em;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center; /* Center the logo */
+    margin-top: 20px; /* Space above the logo */
+}
+
+.logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777; /* Light gray for footer */
+    font-size: 0.9em;
+}
+
+/* Graph Container */
+#graphContainer {
+    margin-top: 30px;
+    background: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Graph Heading */
+#graphContainer h2 {
+    font-size: 1.5em;
+    color: #4caf50; /* Green for eco-friendly emphasis */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Graph Canvas */
+#emissionsChart {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the graph */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Slightly smaller heading for tablets */
+    }
+
+    form label {
+        font-size: 0.9em; /* Adjust label size */
+    }
+
+    form input, form select {
+        font-size: 0.9em; /* Adjust input font size */
+    }
+
+    form button {
+        font-size: 0.9em; /* Adjust button font size */
+    }
+
+    #graphContainer h2 {
+        font-size: 1.2em; /* Adjust graph heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Further reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller heading for mobile devices */
+    }
+
+    form label {
+        font-size: 0.8em; /* Smaller label font size */
+    }
+
+    form input, form select {
+        font-size: 0.8em; /* Smaller input font size */
+    }
+
+    form button {
+        font-size: 0.8em; /* Smaller button font size */
+    }
+
+    #graphContainer h2 {
+        font-size: 1em; /* Adjust graph heading size */
+    }
+}
